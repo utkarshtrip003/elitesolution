@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PhoneButton from "@/components/PhoneButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.author }],
   creator: siteConfig.creator,
   publisher: siteConfig.publisher,
-  
+
   // Open Graph
   openGraph: {
     type: "website",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  
+
   // Twitter Card
   twitter: {
     card: "summary_large_image",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: "@elitesolutions",
   },
-  
+
   // Robots
   robots: {
     index: true,
@@ -70,14 +71,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  
+
   // Verification (add your actual verification codes)
   verification: {
     google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
-  
+
   // Alternate languages
   alternates: {
     canonical: siteConfig.url,
@@ -85,17 +86,17 @@ export const metadata: Metadata = {
       "en-US": siteConfig.url,
     },
   },
-  
+
   // Icons
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  
+
   // Manifest
   manifest: "/manifest.json",
-  
+
   // Additional metadata
   category: "technology",
 };
@@ -123,6 +124,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-[#0A0F1E] antialiased`}
       >
         {children}
+        <PhoneButton />
         <WhatsAppButton />
       </body>
     </html>
