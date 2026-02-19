@@ -24,6 +24,9 @@ export default function Home() {
               <Link href="#services" className="hidden text-sm font-medium text-gray-300 hover:text-white transition-colors sm:block">
                 Services
               </Link>
+              <Link href="/portfolio" className="hidden text-sm font-medium text-gray-300 hover:text-white transition-colors sm:block">
+                Portfolio
+              </Link>
               <Link href="/services" className="text-sm font-medium text-blue-500 hover:text-blue-400 transition-colors">
                 Contact
               </Link>
@@ -66,7 +69,7 @@ export default function Home() {
                 <span className="gradient-text inline-block">
                   Presence
                 </span>
-              </h1>
+          </h1>
               
               <p className="mx-auto mt-8 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg sm:leading-8 lg:text-xl animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 We build high-performance web experiences and drive growth through strategic social media advertising.
@@ -90,11 +93,11 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="#services"
+                  href="/portfolio"
                   className="btn-secondary group"
                 >
                   <span className="flex items-center gap-2">
-                    View Services
+                    View Portfolio
                     <svg className="h-5 w-5 transition-transform group-hover:translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -269,8 +272,8 @@ export default function Home() {
                 </h2>
                 <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
                   Join hundreds of companies growing with our solutions
-                </p>
-              </div>
+          </p>
+        </div>
 
               <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:gap-8">
                 {/* Testimonial 1 */}
@@ -404,8 +407,8 @@ export default function Home() {
                   <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
                     <a
                       href="https://wa.me/917739100259?text=Hi%20Elite%20Solutions!%20I'm%20ready%20to%20start%20my%20project.%20Let's%20discuss!"
-                      target="_blank"
-                      rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                       className="group/btn relative overflow-hidden rounded-full bg-white px-10 py-4 font-bold text-blue-600 shadow-2xl transition-all hover:scale-105 hover:shadow-white/20"
                     >
                       <span className="relative z-10 flex items-center gap-2">
@@ -430,18 +433,26 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                       </span>
-                    </a>
-                  </div>
+          </a>
+        </div>
                   
                   {/* Contact options */}
-                  <div className="mt-12 flex flex-wrap items-center justify-center gap-8 border-t border-white/20 pt-8">
+                  <div className="mt-12 flex flex-wrap items-center justify-center gap-6 border-t border-white/20 pt-8">
+                    <a href="mailto:utkarsh@chatbay.in?subject=Inquiry%20from%20Elite%20Solutions%20Website" className="flex items-center gap-3 text-white/90 hover:text-purple-400 transition-colors">
+                      <div className="rounded-lg bg-white/20 p-2 backdrop-blur-sm">
+                        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <span className="text-sm font-medium">Email: utkarsh@chatbay.in</span>
+                    </a>
                     <a href="tel:+917394840630" className="flex items-center gap-3 text-white/90 hover:text-blue-400 transition-colors">
                       <div className="rounded-lg bg-white/20 p-2 backdrop-blur-sm">
                         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                       </div>
-                      <span className="text-sm font-medium">Call Us: +91 7394840630</span>
+                      <span className="text-sm font-medium">Call: +91 7394840630</span>
                     </a>
                     <a href="https://wa.me/917739100259" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white/90 hover:text-green-400 transition-colors">
                       <div className="rounded-lg bg-white/20 p-2 backdrop-blur-sm">
@@ -451,20 +462,12 @@ export default function Home() {
                       </div>
                       <span className="text-sm font-medium">WhatsApp: +91 77391 00259</span>
                     </a>
-                    <div className="flex items-center gap-3 text-white/90">
-                      <div className="rounded-lg bg-white/20 p-2 backdrop-blur-sm">
-                        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-sm font-medium">Free Consultation</span>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-        </main>
+      </main>
 
         {/* Footer */}
         <footer className="border-t border-white/10 bg-[#0A0F1E]">
@@ -478,7 +481,14 @@ export default function Home() {
               </div>
 
               {/* Contact Info */}
-              <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
+              <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+                <a href="mailto:utkarsh@chatbay.in?subject=Inquiry%20from%20Elite%20Solutions%20Website" className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span className="font-medium">utkarsh@chatbay.in</span>
+                </a>
+                <span className="hidden text-gray-600 sm:block">|</span>
                 <a href="tel:+917394840630" className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors">
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -518,7 +528,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
-      </div>
+    </div>
     </>
   );
 }
