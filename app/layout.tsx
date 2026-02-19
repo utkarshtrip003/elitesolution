@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PhoneButton from "@/components/PhoneButton";
+import EmailButton from "@/components/EmailButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -124,6 +125,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-[#0A0F1E] antialiased`}
       >
         {children}
+        <EmailButton />
         <PhoneButton />
         <WhatsAppButton />
       </body>

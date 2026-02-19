@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitesolutions.com';
   
   // Add your dynamic routes here
-  const routes = ['', '/services', '/about', '/contact', '/blog'].map((route) => ({
+  const routes = ['', '/services', '/portfolio', '/about', '/contact', '/blog'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly' as const,
