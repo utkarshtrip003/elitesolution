@@ -1228,7 +1228,7 @@ function NewHome() {
                           <p className="text-[10px] text-white/40 font-black uppercase tracking-widest">
                             Call Us
                           </p>
-                          <p className="text-xl font-black">+1 (555) 234-5678</p>
+                          <p className="text-xl font-black">7394840630</p>
                         </div>
                       </div>
                     </div>

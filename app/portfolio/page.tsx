@@ -653,7 +653,7 @@ export default function PortfolioPage() {
                             Call Us
                           </p>
                           <p className="text-xl font-black">
-                            +1 (555) 234-5678
+                            7394840630
                           </p>
                         </div>
                       </div>
