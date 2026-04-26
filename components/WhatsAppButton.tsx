@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "917739100259"; // Format: country code + number (no spaces or special chars)
+  const phoneNumber = "917394840630"; // Format: country code + number (no spaces or special chars)
   const message = "Hi Elite Solutions! I'm interested in your services. Can we discuss my project?";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
