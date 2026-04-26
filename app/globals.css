@@ -12,7 +12,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: "Satoshi", system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cabinet Grotesk", "Satoshi", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* Advanced animations */
@@ -48,7 +56,7 @@ body {
   }
 }
 
-@keyframe pulse-glow {
+@keyframes pulse-glow {
   0%,
   100% {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.4),
@@ -474,4 +482,30 @@ body {
   background-color: rgba(202, 138, 4, 0.2);
   color: #facc15;
   box-shadow: 0 0 0 1px rgba(234, 179, 8, 0.3);
+}
+
+/* Elite Solution "bold" system (used by Dynamo ROI redesign page) */
+.bg-cream {
+  background-color: #f9f5f0;
+}
+
+.bg-accent {
+  background-color: #f4c430;
+}
+
+.text-accent {
+  color: #f4c430;
+}
+
+.border-bold {
+  border: 2.5px solid #1a1a1a;
+}
+
+.shadow-bold {
+  box-shadow: 6px 6px 0px 0px #1a1a1a;
+}
+
+.shadow-bold-hover:hover {
+  box-shadow: 4px 4px 0px 0px #1a1a1a;
+  transform: translate(2px, 2px);
 }

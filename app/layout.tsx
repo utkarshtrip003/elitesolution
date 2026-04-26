@@ -4,7 +4,6 @@ import "./globals.css";
 import { siteConfig } from "@/lib/seo";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PhoneButton from "@/components/PhoneButton";
-import EmailButton from "@/components/EmailButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -121,11 +120,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&f[]=satoshi@700,500,400&display=swap"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-[#0A0F1E] antialiased`}
       >
         {children}
-        <EmailButton />
         <PhoneButton />
         <WhatsAppButton />
       </body>
