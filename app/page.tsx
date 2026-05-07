@@ -924,7 +924,26 @@ function NewHome() {
                 </p>
               </div>
 
-              <div className="grid lg:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="bg-cream p-10 rounded-3xl border-bold shadow-bold hover:shadow-bold-hover transition-all group">
+                  <div className="w-16 h-16 bg-white border-bold rounded-2xl flex items-center justify-center mb-8 text-black">
+                    <Icon name="trendingUp" className="h-8 w-8" />
+                  </div>
+                  <div className="flex items-baseline justify-between gap-4 mb-4">
+                    <h3 className="text-2xl font-black uppercase">Google Ads</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest bg-accent text-black border-bold rounded-full px-3 py-1">
+                      ₹4,000/mo
+                    </span>
+                  </div>
+                  <p className="text-black/70 font-medium leading-relaxed mb-8">
+                    High-intent search campaigns built to drive leads and sales with measurable ROI.
+                  </p>
+                  <div className="flex items-center gap-2 text-sm font-black uppercase">
+                    <span>View Strategy</span>
+                    <Icon name="arrowRight" className="h-4 w-4" />
+                  </div>
+                </div>
+
                 <div className="bg-cream p-10 rounded-3xl border-bold shadow-bold hover:shadow-bold-hover transition-all group">
                   <div className="w-16 h-16 bg-white border-bold rounded-2xl flex items-center justify-center mb-8 text-black">
                     <span className="text-2xl font-black">f</span>
