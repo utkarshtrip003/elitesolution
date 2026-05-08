@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Elite Solutions",
   title: "Elite Solutions - Creative Digital Agency",
   description: "We build high-performance web experiences and drive growth through strategic social media advertising. Expert web development, Google Ads, and social media marketing services.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://elitesolutions.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://elitesolution.vercel.app",
   ogImage: "/og-image.jpg",
   keywords: [
     "web development",

@@ -870,9 +870,9 @@ export default function PortfolioPage() {
                 RESERVED.
               </p>
               <div className="flex gap-8 text-[10px] font-black uppercase text-black/40 tracking-[0.2em]">
-                <a href="#" className="hover:text-black">
+                <Link href="/privacy-policy" className="hover:text-black">
                   Privacy Policy
-                </a>
+                </Link>
                 <a href="#" className="hover:text-black">
                   Terms of Service
                 </a>
