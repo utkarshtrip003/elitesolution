@@ -1,7 +1,7 @@
 "use client";
 
 export default function PhoneButton() {
-  const phoneNumber = "7394840630";
+  const phoneNumber = "9140400259";
   const phoneUrl = `tel:+91${phoneNumber}`;
 
   return (
@@ -9,7 +9,7 @@ export default function PhoneButton() {
       href={phoneUrl}
       className="fixed bottom-28 right-8 z-[60] flex h-14 w-14 items-center justify-center rounded-xl bg-white text-black border-bold shadow-bold transition-transform hover:-translate-y-1"
       aria-label="Call us"
-      title="Call: 7394840630"
+      title="Call: +91 9140400259"
     >
       <svg
         className="h-7 w-7 text-black"

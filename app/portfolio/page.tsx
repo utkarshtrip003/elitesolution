@@ -1,6 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
+import {
+  SITE_OWNER_EMAIL,
+  SITE_OWNER_NAME,
+  SITE_OWNER_PHONE_LOCAL,
+  siteCopyrightNotice,
+} from "@/lib/site-owner";
 
 export const metadata: Metadata = {
   title: "Elite Solution | Growth Partners",
@@ -632,6 +638,17 @@ export default function PortfolioPage() {
                     </p>
                     <div className="space-y-8">
                       <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center border-2 border-black text-black">
+                          <Icon name="users" className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <p className="text-[10px] text-white/40 font-black uppercase tracking-widest">
+                            Operated By
+                          </p>
+                          <p className="text-xl font-black">{SITE_OWNER_NAME}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center border-2 border-white text-black">
                           <Icon name="mail" className="h-6 w-6" />
                         </div>
@@ -640,7 +657,7 @@ export default function PortfolioPage() {
                             Email Us
                           </p>
                           <p className="text-xl font-black">
-                            utkarsh@chatbay.in
+                            {SITE_OWNER_EMAIL}
                           </p>
                         </div>
                       </div>
@@ -653,7 +670,7 @@ export default function PortfolioPage() {
                             Call Us
                           </p>
                           <p className="text-xl font-black">
-                            7394840630
+                            +91 {SITE_OWNER_PHONE_LOCAL}
                           </p>
                         </div>
                       </div>
@@ -865,17 +882,16 @@ export default function PortfolioPage() {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t-2 border-black/10">
-              <p className="text-[10px] font-black uppercase text-black/40 tracking-[0.2em]">
-                © {new Date().getFullYear()} ELITE PERFORMANCE GROUP. ALL RIGHTS
-                RESERVED.
+              <p className="max-w-xl text-center text-[10px] font-black uppercase text-black/40 tracking-[0.2em] md:text-left">
+                {siteCopyrightNotice(new Date().getFullYear())}
               </p>
               <div className="flex gap-8 text-[10px] font-black uppercase text-black/40 tracking-[0.2em]">
                 <Link href="/privacy-policy" className="hover:text-black">
                   Privacy Policy
                 </Link>
-                <a href="#" className="hover:text-black">
+                <Link href="/terms-of-service" className="hover:text-black">
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
           </div>

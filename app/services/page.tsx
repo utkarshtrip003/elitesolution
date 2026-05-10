@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
+import { siteCopyrightNotice } from '@/lib/site-owner';
 
 export const metadata: Metadata = {
   title: 'Our Services - Digital Excellence Delivered',
@@ -293,7 +294,7 @@ export default function ServicesPage() {
                 </p>
                 <div className="mt-8">
                   <a
-                    href="https://wa.me/917394840630?text=Hi%20Elite%20Solutions!%20I%20would%20like%20to%20book%20a%20free%20consultation.%20Let's%20discuss%20my%20project!"
+                    href="https://wa.me/919140400259?text=Hi%20Elite%20Solutions!%20I%20would%20like%20to%20book%20a%20free%20consultation.%20Let's%20discuss%20my%20project!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 rounded-full bg-white px-10 py-4 font-bold text-blue-600 shadow-lg hover:bg-gray-100 transition-all"
@@ -320,7 +321,7 @@ export default function ServicesPage() {
                 <span className="text-lg font-bold text-white">Elite Solutions</span>
               </div>
               <p className="text-center text-xs text-gray-400 sm:text-sm">
-                © {new Date().getFullYear()} Elite Solutions Agency. All rights reserved.
+                {siteCopyrightNotice(new Date().getFullYear())}
               </p>
             </div>
           </div>

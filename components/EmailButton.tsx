@@ -1,7 +1,7 @@
 "use client";
 
 export default function EmailButton() {
-  const email = "utkarsh@chatbay.in";
+  const email = "ddshotaman@gmail.com";
   const emailUrl = `mailto:${email}?subject=Inquiry%20from%20Elite%20Solutions%20Website&body=Hi%20Elite%20Solutions,%0D%0A%0D%0AI%20am%20interested%20in%20your%20services.%20Please%20contact%20me%20at%20your%20earliest%20convenience.%0D%0A%0D%0AThank%20you!`;
 
   return (
@@ -10,7 +10,7 @@ export default function EmailButton() {
       className="fixed bottom-44 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-pink-600 shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-purple-500/50 animate-float"
       style={{ animationDelay: "1s" }}
       aria-label="Send us an email"
-      title="Email: utkarsh@chatbay.in"
+      title="Email: ddshotaman@gmail.com"
     >
       <svg
         className="h-7 w-7 text-white"

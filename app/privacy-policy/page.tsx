@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  SITE_OWNER_EMAIL,
+  SITE_OWNER_NAME,
+  SITE_OWNER_PHONE_E164,
+  SITE_OWNER_PHONE_LOCAL,
+  siteCopyrightNotice,
+} from "@/lib/site-owner";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -714,17 +721,38 @@ export default function PrivacyPolicyPage() {
             Contact Us
           </h2>
           <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 font-bold text-black">
+            <li>
+              <span className="font-black">{SITE_OWNER_NAME}</span>
+            </li>
             <li>
               By email:{" "}
               <a
-                href="mailto:Utkarsh@payoneer.com"
+                href={`mailto:${SITE_OWNER_EMAIL}`}
                 className="font-black text-black underline decoration-2 underline-offset-2 hover:text-accent"
               >
-                Utkarsh@payoneer.com
+                {SITE_OWNER_EMAIL}
+              </a>
+            </li>
+            <li>
+              By phone:{" "}
+              <a
+                href={`tel:+${SITE_OWNER_PHONE_E164}`}
+                className="font-black text-black underline decoration-2 underline-offset-2 hover:text-accent"
+              >
+                +91 {SITE_OWNER_PHONE_LOCAL}
               </a>
             </li>
           </ul>
+
+          <p className="mt-12 rounded-2xl border-2 border-black bg-white p-6 text-center text-sm font-black uppercase tracking-wide text-black">
+            {siteCopyrightNotice(new Date().getFullYear())}
+          </p>
+          <p className="text-center text-[10px] font-black uppercase tracking-widest text-black/40">
+            <Link href="/terms-of-service" className="hover:text-black">
+              Terms of Service
+            </Link>
+          </p>
         </div>
       </article>
     </div>
